@@ -6,8 +6,8 @@
           <img src="../assets/images/logo.png" alt="THE KEYNOTE">
         </a>
       </div>
-      <nav class="navbar w-100 mt-2">
-        <ul class="d-flex m-0">
+      <nav class="navbar w-100 mt-1">
+        <ul class="d-flex align-items-center m-0">
           <li><a class="active" href="#">home</a></li>
           <li><a href="#">pages</a></li>
           <li><a href="#">program</a></li>
@@ -16,7 +16,7 @@
           <li><a href="#">papers</a></li>
           <li><a href="#">blog</a></li>
           <li><a href="#">shortcodes</a></li>
-          <li class="pe-4"><a href="#">|</a></li>
+          <li class="pe-4" id="line">|</li>
           <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>    
         </ul>    
       </nav>
@@ -47,13 +47,17 @@ header{
       }
       li{
         padding-right: 40px;
+        &#line{
+          font-size: 12px;
+        }
       }
       a{
         position: relative;
+        letter-spacing: 1px;
         color: $gray;
         text-transform: uppercase;
-        font-size: 12px;
-        font-weight: 600;
+        font-size: 11px;
+        font-weight: 700;
         &.active{
           color: $scarlet;
         }

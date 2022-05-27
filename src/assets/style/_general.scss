@@ -1,8 +1,12 @@
-@import '~@fontsource/lato/index.css';
+@import '~@fontsource/raleway/index.css';
+@import '~@fontsource/raleway/100.css';
+@import '~@fontsource/raleway/300.css';
+@import '~@fontsource/raleway/700.css';
+@import '~@fontsource/raleway/900.css';
 @import '~bootstrap/scss/bootstrap.scss';
 @import '~@fortawesome/fontawesome-free/css/all.min.css';
 body{
-  font-family: "Lato", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 li{
