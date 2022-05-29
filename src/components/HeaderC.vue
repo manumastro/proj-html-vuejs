@@ -8,7 +8,7 @@
       </div>
       <nav class="navbar w-100 mt-1">
         <ul class="d-flex align-items-center m-0">
-          <li><a class="active" href="#">home</a></li>
+          <li><a class="active" href="#wrapper-jumbo">home</a></li>
           <li><a href="#">pages</a></li>
           <li><a href="#">program</a></li>
           <li><a href="#">tickets</a></li>

@@ -1,5 +1,5 @@
 <template>
-  <div id="wrapper" class="d-flex flex-column">
+  <div id="wrapper-jumbo" class="d-flex flex-column">
     <div id="jumbotron" class="d-flex flex-column align-items-center justify-content-center">
     <div id="title" class="d-flex align-items-center flex-column pb-5">
       <h2>Conference on</h2>
@@ -19,8 +19,8 @@
     </div>
     </div>
 
-    <div id="info" class="container d-flex justify-content-between align-items-center ">
-      <div id="who-we-are" class="d-flex px-3 pt-4">
+    <div id="info" class="container d-flex justify-content-between align-items-center pt-4">
+      <div id="who-we-are" class="d-flex px-3">
         <div class="icon"><i class="fa-solid fa-trophy"></i></div>
         <div class="body">
           <div class="title">WHO WE ARE</div>
@@ -28,7 +28,7 @@
           <a href="#">Learn More</a>
         </div>
       </div>
-      <div id="what-we-do" class="d-flex px-3 pt-4">
+      <div id="what-we-do" class="d-flex px-3">
         <div class="icon"><i class="fa-solid fa-bolt-lightning"></i></div>
         <div class="body">
           <div class="title">WHAT WE DO</div>
@@ -36,7 +36,7 @@
           <a href="#">Learn More</a>
         </div>
       </div>
-      <div id="why-us" class="d-flex px-3 pt-4">
+      <div id="why-us" class="d-flex px-3">
         <div class="icon"><i class="fa-solid fa-question"></i></div>
         <div class="body">
           <div class="title">WHY US?</div>
@@ -56,7 +56,7 @@ name: 'JumbotronC'
 
 <style lang="scss" scoped>
 @import '../assets/style/_vars.scss';
-#wrapper{
+#wrapper-jumbo{
   height: calc(100vh - 110px);
   #jumbotron{
     background-image: url('../assets/images/slider-1-bg.jpg');
