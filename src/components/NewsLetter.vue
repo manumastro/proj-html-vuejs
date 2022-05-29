@@ -40,7 +40,7 @@ section{
   background-image: url('../assets/images/coutdown-bg1.jpg');
   background-position: center;
   background-size:auto;
-  padding: 100px 0;
+  padding: 100px 0 80px 0;
   .square{
     display: flex;
     flex-direction: column;
