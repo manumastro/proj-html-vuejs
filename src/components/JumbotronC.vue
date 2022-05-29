@@ -19,7 +19,7 @@
     </div>
     </div>
 
-    <div id="info" class="container d-flex justify-content-between align-items-center pt-4">
+    <div id="info" class="container d-flex justify-content-between align-items-center py-5">
       <div id="who-we-are" class="d-flex px-3">
         <div class="icon"><i class="fa-solid fa-trophy"></i></div>
         <div class="body">
