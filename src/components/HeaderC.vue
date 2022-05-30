@@ -35,6 +35,7 @@ export default {
 
 header{
   position: fixed;
+  z-index: 999;
   width: 100%;
   height: 110px;
   background-color: $white;

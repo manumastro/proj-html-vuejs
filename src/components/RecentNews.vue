@@ -6,31 +6,37 @@
       <div class="news-card">
         <img src="../assets/images/photodune-7770665-two-white-coffee-mug-with-diy-decoration-o.jpg" alt="">
         <div class="date-comments">
-          <span class="date">03 Dec 2013</span>
+          <span class="date pe-3">03 Dec 2013</span>
+          <span class="pe-3">/</span>
           <span class="comments-amount">0 Comments</span>
         </div>
+        <h5>SEDIAL EIUSMOD TEMPOR</h5>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, doloribus. Doloremque labore repellat itaque, reprehenderit laboriosam deleniti explicabo. Fugit obcaecati excepturi doloribus expedita veritatis eligendi nam accusantium ea odio molestias!
         </p>
         <a href="#">Read More</a>
       </div>
       <div class="news-card">
-        <img src="../assets/images/photodune-7770665-two-white-coffee-mug-with-diy-decoration-o.jpg" alt="">
+        <img src="../assets/images/photodune-8797753-multiethnic-people-with-startup-business-t.jpg" alt="">
         <div class="date-comments">
-          <span class="date">03 Dec 2013</span>
-          <span class="comments-amount">0 Comments</span>
+          <span class="date pe-3">03 Dec 2013</span>
+          <span class="pe-3">/</span>
+          <span class="comments-amount">2 Comments</span>
         </div>
+        <h5>DONEC LUCTUS IMPERDIET</h5>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, doloribus. Doloremque labore repellat itaque, reprehenderit laboriosam deleniti explicabo. Fugit obcaecati excepturi doloribus expedita veritatis eligendi nam accusantium ea odio molestias!
         </p>
         <a href="#">Read More</a>
       </div>
       <div class="news-card">
-        <img src="../assets/images/photodune-7770665-two-white-coffee-mug-with-diy-decoration-o.jpg" alt="">
+        <img src="../assets/images/photodune-8522811-speaker-at-business-conference-and-present.jpg" alt="">
         <div class="date-comments">
-          <span class="date">03 Dec 2013</span>
-          <span class="comments-amount">0 Comments</span>
+          <span class="date pe-3">03 Dec 2013</span>
+          <span class="pe-3">/</span>
+          <span class="comments-amount">2 Comments</span>
         </div>
+        <h5>MAGNA PARS STUDIORUM</h5>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, doloribus. Doloremque labore repellat itaque, reprehenderit laboriosam deleniti explicabo. Fugit obcaecati excepturi doloribus expedita veritatis eligendi nam accusantium ea odio molestias!
         </p>
@@ -49,18 +55,40 @@ name: 'RecentNews'
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/style/_vars.scss';
 section{
-  padding: 90px 0;
+  padding: 80px 0;
   .wrapper{
     padding: 0 100px;
     h3{
       font-weight: 600;
+      font-size: 26px;
+      letter-spacing: 2px;
       padding-bottom: 20px;
+      margin-bottom: 30px;
     }
     .news-card{
       width: 31.5%;
       img{
         width: 100%;
+        margin-bottom: 25px;
+      }
+      .date-comments{
+        font-style: italic;
+        color: $gray;
+        margin-bottom: 6px;
+      }
+      h5{
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      p{
+        color: $gray;
+        font-size: 13px;
+      }
+      a{
+        color: $scarlet;
+        font-style: italic;
       }
     }
   }
