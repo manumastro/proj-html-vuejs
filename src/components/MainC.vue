@@ -5,6 +5,7 @@
     <SpeakersC />
     <ProgramC />
     <MapsC />
+    <LocationC />
   </main>
 </template>
 
@@ -14,6 +15,7 @@ import NewsLetter from './NewsLetter.vue'
 import SpeakersC from './SpeakersC.vue'
 import ProgramC from './ProgramC.vue'
 import MapsC from './MapsC.vue'
+import LocationC from './LocationC.vue'
 export default {
   name: 'MainC',
   components: {
@@ -21,7 +23,8 @@ export default {
     NewsLetter,
     SpeakersC,
     ProgramC,
-    MapsC
+    MapsC,
+    LocationC
   }
 }
 </script>
