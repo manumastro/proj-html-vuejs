@@ -4,6 +4,7 @@
     <NewsLetter />
     <SpeakersC />
     <ProgramC />
+    <MapsC />
   </main>
 </template>
 
@@ -12,13 +13,15 @@ import JumbotronC from './JumbotronC.vue'
 import NewsLetter from './NewsLetter.vue'
 import SpeakersC from './SpeakersC.vue'
 import ProgramC from './ProgramC.vue'
+import MapsC from './MapsC.vue'
 export default {
   name: 'MainC',
   components: {
     JumbotronC,
     NewsLetter,
     SpeakersC,
-    ProgramC
+    ProgramC,
+    MapsC
   }
 }
 </script>

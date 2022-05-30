@@ -84,7 +84,7 @@ name: 'ProgramC'
 <style lang="scss" scoped>
 @import '../assets/style/_vars.scss';
 section{
-  padding: 100px 0;
+  padding: 100px 0 80px 0;
   .wrapper{
     padding: 0 100px;
     #top{
