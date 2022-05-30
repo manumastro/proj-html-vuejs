@@ -34,6 +34,8 @@ export default {
 @import '../assets/style/_vars.scss';
 
 header{
+  position: fixed;
+  width: 100%;
   height: 110px;
   background-color: $white;
   .container{
