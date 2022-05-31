@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HeaderC />
+    <HeaderC :navElements = nav />
     <MainC />
     <FooterC />
   </div>
@@ -17,7 +17,45 @@ export default {
     HeaderC,
     MainC,
     FooterC
-    
+  },
+  data(){
+    return{
+      nav: 
+      [
+        {
+          name: 'home',
+          isActive: true    
+        },
+        {
+          name: 'pages',
+          isActive: false    
+        },
+        {
+          name: 'program',
+          isActive: false    
+        },
+        {
+          name: 'tickets',
+          isActive: false    
+        },
+        {
+          name: 'speakers',
+          isActive: false   
+        },
+        {
+          name: 'papersfalse',
+          isActive: false   
+        },
+        {
+          name: 'blog',
+          isActive: false   
+        },
+        {
+          name: 'shortcodes',
+          isActive: false   
+        },
+      ]
+    }
   }
 }
 </script>

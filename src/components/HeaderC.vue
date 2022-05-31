@@ -8,14 +8,10 @@
       </div>
       <nav class="navbar w-100 mt-1">
         <ul class="d-flex align-items-center m-0">
-          <li><a class="active" href="#wrapper-jumbo">home</a></li>
-          <li><a href="#">pages</a></li>
-          <li><a href="#program">program</a></li>
-          <li><a href="#">tickets</a></li>
-          <li><a href="#">speakers</a></li>
-          <li><a href="#">papers</a></li>
-          <li><a href="#">blog</a></li>
-          <li><a href="#">shortcodes</a></li>
+          <li
+            v-for="(item, index) in navElements" :key="`item-${index}`">
+            <a :href="item.name" :class="{active : item.isActive}">{{item.name}}</a>
+          </li>
           <li class="pe-4" id="line">|</li>
           <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>    
         </ul>    
@@ -26,7 +22,10 @@
 
 <script>
 export default {
-  name: 'HeaderC'
+  name: 'HeaderC',
+  props:{
+    navElements: Array,
+  }
 }
 </script>
 

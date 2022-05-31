@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="tickets">
     <h1 class="text-center">TICKETS</h1>
     <div class="container wrapper d-flex align-items-center justify-content-between">
 

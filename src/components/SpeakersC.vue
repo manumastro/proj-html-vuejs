@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="speakers">
     <div class="container wrapper">
       <div class="d-flex justify-content-between align-items-center mb-5">
         <h1>SPEAKERS</h1>
