@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="program">
 
     <div class="container wrapper">
       <div id="top" class="d-flex align-items-center justify-content-between">

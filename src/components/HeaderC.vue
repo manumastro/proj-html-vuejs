@@ -10,7 +10,7 @@
         <ul class="d-flex align-items-center m-0">
           <li><a class="active" href="#wrapper-jumbo">home</a></li>
           <li><a href="#">pages</a></li>
-          <li><a href="#">program</a></li>
+          <li><a href="#program">program</a></li>
           <li><a href="#">tickets</a></li>
           <li><a href="#">speakers</a></li>
           <li><a href="#">papers</a></li>
