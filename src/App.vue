@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HeaderC :navElements = nav />
+    <HeaderC :navElements = headerNav />
     <MainC />
     <FooterC />
   </div>
@@ -20,7 +20,7 @@ export default {
   },
   data(){
     return{
-      nav: 
+      headerNav: 
       [
         {
           name: 'home',
@@ -54,7 +54,8 @@ export default {
           name: 'shortcodes',
           isActive: false   
         },
-      ]
+      ],
+      
     }
   }
 }

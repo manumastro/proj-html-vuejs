@@ -2,48 +2,10 @@
   <footer>
     <section id="top">
       <div class="d-flex justify-content-between container wrapper">
-        <div id="about-us" class="d-flex flex-column item">
-          <h5>ABOUT US</h5>
-          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-          <div id="socials" class="d-flex">
-            <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-google-plus-square"></i></a>
-            <a href="#"><i class="fa-brands fa-pinterest-square"></i></a>
-          </div>
-        </div>
-        <div id="recent-news" class="item">
-          <h5>RECENT NEWS</h5>
-          <div id="links" class="d-flex flex-column ps-2">
-            <div class="link d-flex align-items-center">
-              <i class="fa-solid fa-chevron-right"></i>
-              <span><a href="#">SEM PORTA MOLLIS PARTURIENT</a></span>
-            </div>
-            <div class="link d-flex align-items-center">
-              <i class="fa-solid fa-chevron-right"></i>
-              <span><a href="#">SEM PORTA MOLLIS PARTURIENT</a></span>
-            </div>
-            <div class="link d-flex align-items-center">
-              <i class="fa-solid fa-chevron-right"></i>
-              <span><a href="#">SEM PORTA MOLLIS PARTURIENT</a></span>
-            </div>
-            <div class="link d-flex align-items-center">
-              <i class="fa-solid fa-chevron-right"></i>
-              <span><a href="#">SEM PORTA MOLLIS PARTURIENT</a></span>
-            </div>
-            <div class="link d-flex align-items-center">
-              <i class="fa-solid fa-chevron-right"></i>
-              <span><a href="#">SEM PORTA MOLLIS PARTURIENT</a></span>
-            </div>
-          </div>
-        </div>
-        <div id="get-your-seat" class="item d-flex flex-column">
-          <h5>GET YOUR SEAT!</h5>
-          <p>Book for your seat before it's too rate. <br> We provide variety of ticket options</p>
-          <button class="btn btn-danger"><a href="#">CHECK OUT TICKETS!</a></button>
-        </div>
-        <div id="gallery-from-last-year" class="item d-flex flex-column">
+        <AboutUs :aboutUs = aboutUs />
+        <RecentNewsFooter :recentNews = recentNews />
+        <GetYourSeat :getYourSeat = getYourSeat />
+        <!-- <div id="gallery-from-last-year" class="item d-flex flex-column">
           <h5>GALLERY FROM LAST YEAR</h5>
           <div id="gallery" class="d-flex flex-wrap justify-content-between">
             <img src="../assets/images/6426608875_186070f8ca_o-150x150.jpg" alt="">
@@ -59,7 +21,8 @@
             <img src="../assets/images/6426608875_186070f8ca_o-150x150.jpg" alt="">
             <img src="../assets/images/6426608875_186070f8ca_o-150x150.jpg" alt="">
           </div>
-        </div>
+        </div> -->
+        <GalleryFromLastYear :galleryFromLastYear = galleryFromLastYear />
       </div>
     </section>
 
@@ -81,12 +44,64 @@
 </template>
 
 <script>
+import AboutUs from './AboutUs.vue'
+import GalleryFromLastYear from './GalleryFromLastYear.vue'
+import GetYourSeat from './GetYourSeat.vue'
+import RecentNewsFooter from './RecentNewsFooter.vue'
 export default {
-
+  components: { AboutUs, RecentNewsFooter, GetYourSeat, GalleryFromLastYear },
+name: 'FooterC',
+data(){
+  return{
+    aboutUs: {
+      title: 'ABOUT US',
+      description: 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+      icons: {
+        facebook: 'fa-brands fa-facebook-square',
+        twitter: 'fa-brands fa-twitter-square',
+        linkedin: 'fa-brands fa-linkedin',
+        googlePlus: 'fa-brands fa-google-plus-square',
+        pinterest: 'fa-brands fa-pinterest-square',
+      }
+    },
+    recentNews: {
+      title: 'RECENT NEWS',
+      links: [
+        'SEM PORTA MOLLIS PARTURIENT',
+        'NULLAM LOREM MATTIS PURUS',
+        'NIBH SEM SIT ULLAMCORPER',
+        'DONEC LUCTUS IMPERDIET',
+        'MAGNA PARS STUDIORUM'
+      ]
+    },
+    getYourSeat: {
+      title: 'GET YOUR SEAT!',
+      description: 'Book for your seat before its too rate. We provide variety of ticket options.',
+      button: 'CHECK OUT TICKETS!'
+    },
+    galleryFromLastYear: {
+      title: 'GALLERY FROM LAST YEAR',
+      images: [
+        '6426608875_186070f8ca_o-150x150.jpg',
+        'photodune-8523683-speaker-at-business-convention-and-present.jpg',
+        'photodune-6745579-modern-creative-man-relaxing-on-workspace-.jpg',
+        'photodune-8522811-speaker-at-business-conference-and-present (1).jpg',
+        'photodune-8797753-multiethnic-people-with-startup-business-t (1).jpg',
+        'card04-150x150.jpg',
+        'photodune-8797753-multiethnic-people-with-startup-business-t (1).jpg',
+        'photodune-6745585-modern-creative-workspace-m-150x150.jpg',
+        '6426608875_186070f8ca_o-150x150.jpg',
+        'card01-150x150.jpg',
+        '13349065283_64d09b067c_o-150x150.jpg',
+        'photodune-8795110-overhead-of-essentials-denim-clothes-m-150.jpg',
+      ]
+    }
+  }
+}
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '../assets/style/_vars.scss';
 
 footer{
@@ -128,11 +143,11 @@ footer{
     background-color: #212121;
     .item{
       width: 22%;
-      #gallery{
+      
         img{
           width: calc((100% / 4) - 8px);
           padding-bottom: 10px;
-        }
+      
       }
       .link{
         margin-bottom: 16px;

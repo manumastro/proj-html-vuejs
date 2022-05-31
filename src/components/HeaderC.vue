@@ -10,7 +10,7 @@
         <ul class="d-flex align-items-center m-0">
           <li
             v-for="(item, index) in navElements" :key="`item-${index}`">
-            <a :href="item.name" :class="{active : item.isActive}">{{item.name}}</a>
+            <a :href="`#${item.name}`" :class="{active : item.isActive}">{{item.name}}</a>
           </li>
           <li class="pe-4" id="line">|</li>
           <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>    
