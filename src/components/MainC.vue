@@ -10,6 +10,7 @@
     <RecentNews />
     <TicketsC />
     <PresentationTwitterFeed />
+    <SponsorsC />
   </main>
 </template>
 
@@ -24,6 +25,7 @@ import LocationC from './LocationC.vue'
 import RecentNews from './RecentNews.vue'
 import TicketsC from './TicketsC.vue'
 import PresentationTwitterFeed from './PresentationTwitterFeed.vue'
+import SponsorsC from './SponsorsC.vue'
 
 export default {
   name: 'MainC',
@@ -37,7 +39,8 @@ export default {
     LocationC,
     RecentNews,
     TicketsC,
-    PresentationTwitterFeed
+    PresentationTwitterFeed,
+    SponsorsC
   }
 }
 </script>
