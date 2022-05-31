@@ -63,14 +63,18 @@
       </div>
     </section>
 
-
-
-
-
     <section id="bottom">
-      <div class="d-flex">
-        <div id="left"></div>
-        <div id="right"></div>
+      <div class="d-flex container justify-content-between wrapper">
+        <span id="copyright">
+          <i class="fa-solid fa-copyright"></i>
+          Copyright GoodLayers, All Right Reserved
+        </span>
+        <span>
+          <a href="#">About Us | </a>
+          <a href="#">Accommodation | </a>
+          <a href="#">Call For Paper | </a>
+          <a href="#">Contact Us </a>
+        </span>
       </div>
     </section>
   </footer>
@@ -142,7 +146,20 @@ footer{
         }
       }
     }
-
+  }
+  section#bottom{
+    background-color: #161616;
+    padding: 30px 0;
+    i, span, a{
+      font-size: 13px;
+      color: $gray;
+    }
+    #copyright{
+      color: rgb(85, 84, 84);
+      i{
+        color: rgba(85, 84, 84, .5);
+      }
+    }
   }
 }
 
