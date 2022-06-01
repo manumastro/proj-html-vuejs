@@ -5,23 +5,6 @@
         <AboutUs :aboutUs = aboutUs />
         <RecentNewsFooter :recentNews = recentNews />
         <GetYourSeat :getYourSeat = getYourSeat />
-        <!-- <div id="gallery-from-last-year" class="item d-flex flex-column">
-          <h5>GALLERY FROM LAST YEAR</h5>
-          <div id="gallery" class="d-flex flex-wrap justify-content-between">
-            <img src="../assets/images/6426608875_186070f8ca_o-150x150.jpg" alt="">
-            <img src="../assets/images/6426608875_186070f8ca_o-150x150.jpg" alt="">
-            <img src="../assets/images/6426608875_186070f8ca_o-150x150.jpg" alt="">
-            <img src="../assets/images/6426608875_186070f8ca_o-150x150.jpg" alt="">
-            <img src="../assets/images/6426608875_186070f8ca_o-150x150.jpg" alt="">
-            <img src="../assets/images/6426608875_186070f8ca_o-150x150.jpg" alt="">
-            <img src="../assets/images/6426608875_186070f8ca_o-150x150.jpg" alt="">
-            <img src="../assets/images/6426608875_186070f8ca_o-150x150.jpg" alt="">
-            <img src="../assets/images/6426608875_186070f8ca_o-150x150.jpg" alt="">
-            <img src="../assets/images/6426608875_186070f8ca_o-150x150.jpg" alt="">
-            <img src="../assets/images/6426608875_186070f8ca_o-150x150.jpg" alt="">
-            <img src="../assets/images/6426608875_186070f8ca_o-150x150.jpg" alt="">
-          </div>
-        </div> -->
         <GalleryFromLastYear :galleryFromLastYear = galleryFromLastYear />
       </div>
     </section>

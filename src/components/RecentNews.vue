@@ -5,6 +5,10 @@
     <div class="cards d-flex justify-content-between">
       <div class="news-card">
         <img src="../assets/images/photodune-7770665-two-white-coffee-mug-with-diy-decoration-o.jpg" alt="">
+        <div class="sticky-post">
+          <i class="fa-solid fa-bullhorn pe-2"></i>
+          <span>STICKY POST</span>
+        </div>
         <div class="date-comments">
           <span class="date pe-3">03 Dec 2013</span>
           <span class="pe-3">/</span>
@@ -18,6 +22,10 @@
       </div>
       <div class="news-card">
         <img src="../assets/images/photodune-8797753-multiethnic-people-with-startup-business-t.jpg" alt="">
+        <div class="sticky-post">
+          <i class="fa-solid fa-bullhorn pe-2"></i>
+          <span>STICKY POST</span>
+        </div>
         <div class="date-comments">
           <span class="date pe-3">03 Dec 2013</span>
           <span class="pe-3">/</span>
@@ -31,6 +39,10 @@
       </div>
       <div class="news-card">
         <img src="../assets/images/photodune-8522811-speaker-at-business-conference-and-present.jpg" alt="">
+        <div class="sticky-post">
+          <i class="fa-solid fa-bullhorn pe-2"></i>
+          <span>STICKY POST</span>
+        </div>
         <div class="date-comments">
           <span class="date pe-3">03 Dec 2013</span>
           <span class="pe-3">/</span>
@@ -68,10 +80,33 @@ section{
       margin-bottom: 30px;
     }
     .news-card{
+      position: relative;
       width: 31.5%;
+      &:hover .sticky-post{
+
+        opacity: 1;
+      }
       img{
         width: 100%;
         margin-bottom: 25px;
+      }
+      .sticky-post{
+        position: absolute;
+        top: 169px;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 6px 5px;
+        width: 40%;
+        background-color: #232323;
+        color: white;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+        span, i{
+          font-weight: bold;
+          font-size: 14px;
+        }
       }
       .date-comments{
         font-style: italic;

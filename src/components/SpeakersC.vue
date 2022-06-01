@@ -13,26 +13,59 @@
         </div>
       </div>
       <div id="speakers" class="d-flex justify-content-between">
-        <div class="speaker">
-          <img src="../assets/images/speaker-6.jpg" alt="">
+        <div class="speaker position-relative">
+          <div class="overlay">
+            <img src="../assets/images/speaker-6.jpg" alt="">
+          </div>
+          <div class="socials">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
           <div class="name">PATRICK SPENCER</div>
           <div class="rule">S&P Analyzer</div>
         </div>
-        <div class="speaker">
-          <img src="../assets/images/speaker-5.jpg" alt="">
+
+        <div class="speaker position-relative">
+          <div class="overlay">
+            <img src="../assets/images/speaker-5.jpg" alt="">
+          </div>
+          <div class="socials">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
           <div class="name">JANET JONES</div>
           <div class="rule">Newyork Post's GM</div>
         </div>
-        <div class="speaker">
-          <img src="../assets/images/speaker-4.jpg" alt="">
+
+        <div class="speaker position-relative">
+          <div class="overlay">
+            <img src="../assets/images/speaker-4.jpg" alt="">
+          </div>
+          <div class="socials">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
           <div class="name">MICHAEL DOVER</div>
-          <div class="rule">Starbuck's SEO</div>
+          <div class="rule">Starbuck's CEO</div>
         </div>
-        <div class="speaker">
-          <img src="../assets/images/speaker-3.jpg" alt="">
+
+        <div class="speaker position-relative">
+          <div class="overlay">
+            <img src="../assets/images/speaker-3.jpg" alt="">
+          </div>
+          <div class="socials">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
           <div class="name">ANGELINA HOLY</div>
           <div class="rule">Maxii's Manager</div>
         </div>
+        
+        
       </div>
     </div>
   </section>
@@ -68,10 +101,38 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    &:hover img{
+      opacity: 0.3;
+    }
+    &:hover .socials{
+      opacity: 1;
+    }
+    &:hover .overlay{
+      background: #e9624c;
+    }
     img{
+      transition: .5s ease;
       width: 100%;
       border-radius: 5px;
+    }
+    .overlay{
+      transition: .5s ease-in-out;
+      max-height: 186px;
       margin-bottom: 22px;
+      border-radius: 5px;
+    }
+    .socials{
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 36%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      i{
+        margin-right: 15px;
+        color: white;
+        font-size: 19px;
+      }
     }
     .name{
       font-weight: 600;
